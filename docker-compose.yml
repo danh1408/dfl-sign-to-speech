@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  node1:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "50051:50051"
+    environment:
+      - NODE_ID=1
+
+  node2:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "50052:50051"
+    environment:
+      - NODE_ID=2
+
+  node3:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "50053:50051"
+    environment:
+      - NODE_ID=3
+
+  node4:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "50054:50051"
+    environment:
+      - NODE_ID=4
+
+  node5:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "50055:50051"
+    environment:
+      - NODE_ID=5

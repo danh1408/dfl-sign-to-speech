@@ -1,0 +1,8 @@
+torch
+torchvision
+grpcio
+grpcio-tools
+numpy
+streamlit
+gTTS
+pyttsx3
